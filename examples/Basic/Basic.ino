@@ -11,10 +11,9 @@
 // The minix files here might be the same thing:
 // http://www.cise.ufl.edu/~cop4600/cgi-bin/lxr/http/source.cgi/commands/zmodem/
 
-#include "zmodem_config.h"
-
-#include "zmodem.h"
-#include "zmodem_zm.h"
+#include <zmodem.h>
+#include <zmodem_config.h>
+#include <zmodem_zm.h>
 
 // This works with Tera Term Pro Web Version 3.1.3 (2002/10/08)
 // (www.ayera.com) but TeraTerm only works on COM1, 2, 3 or 4.
@@ -126,8 +125,6 @@ V2.00
 */
 
 #include <SdFat.h>
-#include <SdFatUtil.h>
-
 SdFat sd;
 
 #ifdef SFMP3_SHIELD
@@ -438,6 +435,3 @@ void loop(void)
 #endif
   }
 }
-
-
-

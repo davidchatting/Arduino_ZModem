@@ -158,4 +158,3 @@ long c;
 
 /* End of crctab.c */
 #endif
-
